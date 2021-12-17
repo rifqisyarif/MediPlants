@@ -1,0 +1,686 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* ----------  _  _  __  ---------- */
+/* ---------- |   |_ |_  ---------- */
+/* ---------- |_  _| __|  ---------- */
+
+/* ------- MAIN ------- */
+body {
+  font-family: "Poppins", sans-serif;
+}
+.home {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)),
+    url(img/img1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  /* position: relative; */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 8%;
+  z-index: 99;
+}
+
+.nav-colored {
+  background-color: #fff;
+  box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.nav-transparent {
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.logo-white {
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0));
+}
+
+.logo-shadow {
+  filter: drop-shadow(0 0 0.35rem rgba(0, 0, 0, 0.9));
+}
+
+.logo {
+  cursor: pointer;
+}
+.logo img {
+  width: 170px;
+}
+
+.sign-up,
+.overlay__content a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav_links a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav_links_black a {
+  color: #444;
+}
+
+.nav_links_white a {
+  color: #fff;
+}
+
+.nav_links {
+  list-style: none;
+  display: flex;
+}
+
+.nav_links li {
+  padding: 0px 25px;
+}
+
+.nav_links li a {
+  transition: color 0.3s ease 0s;
+  font-weight: 400;
+}
+
+.nav_links li a:hover {
+  color: #00cc76;
+}
+
+.sign-up {
+  padding: 9px 25px;
+  background-color: #00cc76;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+  color: #fff;
+}
+
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+}
+
+/* .item-cont{
+ 
+} */
+
+.hero h1 {
+  font-size: 62px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.hero p {
+  margin: 15px 0px 40px;
+  font-family: "avenir";
+  font-size: 17px;
+  color: #fff;
+}
+
+.search-bar {
+  margin: auto;
+  display: block;
+  background-color: #fff;
+  width: 60%;
+  height: 50px;
+  border-radius: 5px;
+  color: #9d9d9d;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 20px;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.fa-search {
+  margin-right: 18px;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #444;
+  padding: 15px;
+  width: 175px;
+  font-size: 13px;
+  background: transparent;
+  border: 1px solid #444;
+  position: relative;
+  cursor: pointer;
+  transition: 0.7s;
+  font-size: 14px;
+}
+
+.hero-btn:hover {
+  border: 1px solid #00cc76;
+  background: #00cc76;
+  letter-spacing: 1.1px;
+  transition: 0.7s;
+}
+
+.row {
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Categories */
+
+.facilities {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.facilities-col {
+  flex-basis: 31%;
+  border-radius: 10px;
+  text-align: left;
+  margin: 0 2% 2%;
+}
+.facilities-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+.facilities-col p {
+  padding: 0;
+  margin: 0;
+}
+.facilities-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.facilities h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.facilities p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.card-hover {
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.card-hover:hover {
+  transform: scale(1.05);
+  transition: 0.7s;
+}
+
+/* ----- ARTICLE ----- */
+
+.article {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 150px;
+}
+
+.article h1 {
+  margin-top: 60px;
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #fff;
+  width: 270px;
+  margin: 0 10px 10px 10px;
+  border-radius: 15px 15px 15px 15px;
+  cursor: pointer;
+  box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.1);
+  transition: 0.7s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.7s;
+}
+.card-image {
+  height: 170px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-detail {
+  box-sizing: border-box;
+  padding: 5px 25px 30px 25px;
+  text-align: left;
+}
+.car-1 {
+  background-image: url("img/img1.png");
+}
+
+.car-2 {
+  background-image: url("img/img1.png");
+}
+
+.car-3 {
+  background-image: url("img/img1.png");
+}
+
+.card h2 {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.card .card-detail p {
+  margin-top: 10px;
+  padding: 0;
+  font-size: 13.5px;
+}
+
+.article p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+/* ----- Contact -----*/
+
+.contact {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.contact h1 {
+  margin-top: 60px;
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.containers {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.containers .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.containers .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.containers .contactInfo .box .icon {
+  min-width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.containers .contactInfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: black;
+  flex-direction: column;
+  font-weight: 300;
+  text-align: left;
+}
+.containers .contactInfo .box .text h3 {
+  font-weight: 500;
+  color: #00cc76;
+}
+.contactForm {
+  width: 40%;
+  background: white;
+}
+.contactForm h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contactForm .inputBox input {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 14px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #666;
+}
+
+.contactForm .inputBox textarea {
+  width: 100%;
+  border: 1px solid #666;
+  outline: none;
+  resize: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #666;
+  border-radius: 1%;
+  margin-top: 20px;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contactForm .textarea span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 30px 0 10px 20px;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span {
+  color: #00cc76;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+  color: #00cc76;
+  font-size: 12px;
+  transform: translate(-20px, -40px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+  width: 100px;
+  background: #00cc76;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.contactForm .hero-btn {
+  margin-top: 40px;
+}
+/* ----- FOOTER ----- */
+.footer {
+  height: 400px;
+  width: 100%;
+  /* background-color: #00AA95; */
+  background-image: radial-gradient(
+    circle at 50% 200%,
+    #a5e887 100px,
+    #00aa95 600px
+  );
+  box-sizing: border-box;
+  padding: 90px 11% 360px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.con {
+  margin-bottom: 60px;
+  font-size: 17px;
+}
+
+.contact-container {
+  display: flex;
+}
+
+.umar,
+.khalish,
+.rifqi {
+  margin-right: 70px;
+  width: 180px;
+}
+
+.umar h3,
+.khalish h3,
+.rifqi h3 {
+  font-weight: 600;
+  font-size: 17px;
+  display: inline-block;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}
+
+.umar a,
+.khalish a,
+.rifqi a {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+  font-size: 15px;
+}
+
+.umar a::after,
+.khalish a::after,
+.rifqi a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 7px;
+  transition: 0.5s;
+}
+
+.umar a:hover::after,
+.khalish a:hover::after,
+.rifqi a:hover::after {
+  width: 100%;
+  transition: 0.5s;
+  background-color: #a5e887;
+}
+
+.umar a:hover,
+.khalish a:hover,
+.rifqi a:hover {
+  color: #a5e887;
+  transition: 0.5s;
+}
+
+.fa {
+  margin-right: 10px;
+}
+
+.copyright {
+  font-weight: 300;
+  margin-top: 70px;
+}
